@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Atom, Send, Image as ImageIcon, Music, BookOpen, Monitor, LogIn, LogOut, Loader2, Palette, Download, Edit2, ImagePlus, X, Menu, Plus, MessageCircle, History, Zap, Clock } from 'lucide-react';
+import { Atom, Send, Image as ImageIcon, Music, BookOpen, Monitor, LogIn, LogOut, Loader as Loader2, Palette, Download, CreditCard as Edit2, ImagePlus, X, Menu, Plus, MessageCircle, History, Zap, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { auth, db, googleProvider } from './firebase';
 import { signInWithPopup, signOut, onAuthStateChanged, User, setPersistence, browserLocalPersistence } from 'firebase/auth';
@@ -684,7 +684,7 @@ const App: React.FC = () => {
                         className="p-2 -ml-2 text-slate-400 hover:text-white transition-all hover:scale-110 active:scale-95 flex items-center justify-center"
                         title="Open Chat History"
                     >
-                        <MessageCircle size={20} />
+                        <History size={20} />
                     </button>
                 )}
                 <div className="flex items-center gap-3">
